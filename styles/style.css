@@ -1,25 +1,128 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap");
+@import "tailwindcss";
 
 /* Font - title */
 .title-font {
-  font-family: "Noto Serif", serif;
-  font-optical-sizing: auto;
-  font-style: normal;
-  font-variation-settings:
-    "wdth" 100;
+    font-family: "Noto Serif", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-variation-settings: "wdth" 100;
 }
 
 /* Regular Font */
 
 .regular-font {
-  font-family: "Inter", sans-serif;
-  font-optical-sizing: auto;
-  font-style: normal;
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
 }
 
 /* Root Styles */
-*{
+
+* {
     margin: 0 0;
     padding: 0 0;
     box-sizing: border-box;
+}
+
+/* Shared Styles */
+:root {
+    --dark-1: #000000;
+    --dark-2: #252432;
+    --dark-3: #8987a1;
+    --p-color: rgba(0, 0, 0, 0.5);
+    --primary-color: #e95a08;
+    --main-dark: #000000;
+}
+.dark-1 {
+    color: var(--dark-1);
+}
+.dark-2 {
+    color: var(--dark-2);
+}
+.dark-3 {
+    color: var(--dark-3);
+}
+.p-color {
+    color: var(--p-color);
+}
+.primary-color {
+    color: var(--primary-color);
+}
+/* Main width */
+.main-width {
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+/* p tag styles */
+p {
+    color: var(--p-color);
+    line-height: 1.75rem;
+    margin-top: 18px;
+    font-size: 1.375rem;
+}
+
+/* Nav bar styles */
+
+.nav-container {
+    margin-top: 25px;
+    margin-bottom: 130px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav-container ul {
+    display: flex;
+    gap: 45px;
+}
+.nav-container ul li {
+    list-style: none;
+}
+.nav-container ul li a {
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1.2rem;
+}
+
+/* banner styles */
+.banner-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.banner-title {
+    font-size: 4.1rem;
+    font-weight: 700;
+}
+
+/* Mediaqueray */
+@media screen and (max-width: 576px) {
+    /* Shared Styles */
+    .hide {
+        display: none;
+    }
+    .margin {
+        margin: 0 15px;
+    }
+
+    /* Main styles */
+    .nav-container,
+    .banner-title{
+        margin-top: 30px;
+    }
+  
+    nav{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0 15px;
+    }
+
+    .banner-container {
+        flex-direction: column-reverse;
+        margin-top: 30px;
+    }
+}
+@media screen and (max-width: 768px) and (min-width: 576px) {
 }
