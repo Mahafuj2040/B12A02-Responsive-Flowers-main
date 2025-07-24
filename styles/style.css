@@ -96,7 +96,64 @@ p {
     font-weight: 700;
 }
 
+/* Plant section  styles */
+.plant-section{
+    margin-top: 130px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+.section-title{
+    font-size: 3.125rem;
+    font-weight: 700;
+}
+.section-des{
+    max-width: 880px;
+    margin: 0 auto;
+}
+
+/* cards */
+.plant-cards{
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+}
+
+.card button{
+    background-color: #e95a08;
+    font-weight: 600;
+    font-size: 1rem;
+    color: #fff;
+    width: 100%;
+    padding: 8px 0;
+    cursor: pointer;
+    margin-top: 10px;
+}
+.card button:hover{
+    background-color: #e95a089d;
+    color: #cfcfcf;
+}
+.card h5{
+    font-size: 1.2rem;
+    margin-top: 10px;
+    font-weight: 500;
+}
+.card h3{
+    font-size: 1.4rem;
+    font-weight: 600;
+}
+
+
+
 /* Mediaqueray */
+@media screen and (max-width: 1190px) and (min-width: 576px) {
+    body {
+        margin: 0 50px;
+    }
+}
+
+
 @media screen and (max-width: 576px) {
     /* Shared Styles */
     .hide {
@@ -123,6 +180,10 @@ p {
         flex-direction: column-reverse;
         margin-top: 30px;
     }
+
+    /*plant Section */
+    .plant-cards{
+        grid-template-columns: repeat(2, 1fr);
+    }
 }
-@media screen and (max-width: 768px) and (min-width: 576px) {
-}
+
