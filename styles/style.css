@@ -490,7 +490,7 @@ p {
         font-size: 1.8rem;
     }
     .search form {
-        width: calc(100% - 10px);
+        width: 100%;
         height: auto;
     }
 
@@ -522,7 +522,7 @@ p {
         width: 25% !important;
         height: 25% !important;
     }
-    .nav-container{
+    /* .nav-container{
         margin: 30px;
-    }
+    } */
 }
