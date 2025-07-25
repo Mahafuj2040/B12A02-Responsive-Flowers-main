@@ -490,7 +490,7 @@ p {
         font-size: 1.8rem;
     }
     .search form {
-        width: 100%;
+        width: calc(100% - 10px);
         height: auto;
     }
 
